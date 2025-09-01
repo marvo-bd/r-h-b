@@ -1,5 +1,3 @@
-// main.js
-
 // Containers
 const featuredContainer = document.getElementById("featured-post-container");
 const latestContainer = document.getElementById("latest-post-container");
