@@ -1,44 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to the World of Raven Hunt | Blog</title>
-  <meta name="description" content="Raven Hunt welcomes you to the world of music, emotions, and storytelling. Explore the vision behind the music and join the community.">
-  <link rel="icon" href="/favicon.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Glow effect for images */
-    .glow-yellow {
-      box-shadow: 0 0 20px 5px rgba(250, 204, 21, 0.7);
-    }
-    /* Reading progress bar */
-    #progress-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 4px;
-      background: linear-gradient(90deg, #facc15, #ec4899, #8b5cf6);
-      width: 0%;
-      z-index: 50;
-      transition: width 0.1s;
-    }
-    /* Line clamp for preview text */
-    .line-clamp-4 {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    /* Hover border glow for suggested articles */
-    .hover-glow {
-      transition: all 0.3s ease;
-    }
-    .hover-glow:hover {
-      box-shadow: 0 0 15px 3px rgba(250, 204, 21, 0.7);
-      transform: translateY(-2px);
-    }
-  </style>
-</head>
+    <head>
+        <!-- Basic Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to the World of Raven Hunt | Music Blog</title>
+        <meta name="description" content="Discover the world of Raven Hunt: music, storytelling, and emotions. Explore our vision, blog posts, and join our passionate community.">
+        <meta name="keywords" content="Raven Hunt, music blog, indie music, bedroom pop, emotional music, storytelling, music journey">
+        <link rel="icon" href="/favicon.ico">
+      
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt">
+      
+        <!-- RSS Feed -->
+        <link rel="alternate" type="application/rss+xml" title="Raven Hunt Blog RSS Feed" href="https://blog.ravenhunt.xyz/rss.xml">
+      
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Welcome to the World of Raven Hunt | Music Blog">
+        <meta property="og:description" content="Discover the world of Raven Hunt: music, storytelling, and emotions. Explore our vision and blog posts.">
+        <meta property="og:image" content="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover%20image.jpg">
+        <meta property="og:url" content="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt">
+        <meta property="og:type" content="article">
+        <meta property="og:site_name" content="Raven Hunt">
+      
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Welcome to the World of Raven Hunt | Music Blog">
+        <meta name="twitter:description" content="Discover the world of Raven Hunt: music, storytelling, and emotions. Explore our vision and blog posts.">
+        <meta name="twitter:image" content="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover%20image.jpg">
+        <meta name="twitter:site" content="@raven_hunt_official">
+      
+        <!-- Structured Data (JSON-LD for BlogPosting) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt"
+          },
+          "headline": "Welcome to the World of Raven Hunt",
+          "image": ["https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover%20image.jpg"],
+          "author": {
+            "@type": "Person",
+            "name": "Raven Hunt"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Raven Hunt",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://blog.ravenhunt.xyz/favicon.ico"
+            }
+          },
+          "datePublished": "2025-09-01",
+          "dateModified": "2025-09-01",
+          "description": "Discover the world of Raven Hunt: music, storytelling, and emotions. Explore our vision, blog posts, and join our passionate community."
+        }
+        </script>
+      
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+      
+        <!-- Styles -->
+        <style>
+          /* Glow effect for images */
+          .glow-yellow {
+            box-shadow: 0 0 20px 5px rgba(250, 204, 21, 0.7);
+          }
+          /* Reading progress bar */
+          #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #facc15, #ec4899, #8b5cf6);
+            width: 0%;
+            z-index: 50;
+            transition: width 0.1s;
+          }
+          /* Line clamp for preview text */
+          .line-clamp-4 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+          /* Hover border glow for suggested articles */
+          .hover-glow {
+            transition: all 0.3s ease;
+          }
+          .hover-glow:hover {
+            box-shadow: 0 0 15px 3px rgba(250, 204, 21, 0.7);
+            transform: translateY(-2px);
+          }
+        </style>
+      </head>
+      
 <body class="bg-black text-gray-200 font-sans relative">
 
   <!-- Reading Progress Bar -->
