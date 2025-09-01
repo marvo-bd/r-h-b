@@ -1,0 +1,19 @@
+<svg height="60" width="60" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ravenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b21a8" />        <!-- deep purple -->
+      <stop offset="50%" stop-color="#1e1b4b" />       <!-- dark bluish black -->
+      <stop offset="100%" stop-color="#facc15" />      <!-- golden sunrays -->
+    </linearGradient>
+  </defs>
+  <g stroke="none">
+    <!-- Right Bar -->
+    <path d="M167.666 0c-5.521 0-10 4.477-10 10v228.932c0 5.523 4.479 10 10 10h54.982c5.521 0 10-4.477 10-10V10c0-5.523-4.479-10-10-10z" fill="url(#ravenGradient)"/>
+    
+    <!-- Left Bar -->
+    <path d="M27 0c-5.523 0-10 4.477-10 10v228.932c0 5.523 4.477 10 10 10h54.981c5.523 0 10-4.477 10-10V10c0-5.523-4.477-10-10-10z" fill="url(#ravenGradient)"/>
+  </g>
+</svg>
+
+
+

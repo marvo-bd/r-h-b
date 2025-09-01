@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Raven Hunt</title>
+  <meta name="description" content="Thank you for reaching out to Raven Hunt. Your message has been successfully sent. Stay tuned for updates, music, and stories.">
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Glow effects */
+    .glow-yellow {
+      box-shadow: 0 0 25px 6px rgba(250, 204, 21, 0.6);
+    }
+    .glow-purple {
+      box-shadow: 0 0 25px 6px rgba(139, 92, 246, 0.6);
+    }
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-black text-gray-200 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-900 via-purple-800 to-black py-16 text-center relative overflow-hidden">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-yellow-400 drop-shadow-lg mb-4 glow-yellow fade-in">Thank You!</h1>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl fade-in delay-200">
+      Your message has been successfully sent. Raven Hunt will get back to you soon. Stay tuned for the latest music, stories, and updates.
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-6 md:px-12 py-12 space-y-12 fade-in delay-400">
+    <section class="max-w-2xl mx-auto text-center bg-black/80 p-8 rounded-xl shadow-lg glow-purple">
+      <img src="/images/silhouette.png" alt="Raven Hunt" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full mb-6 glow-yellow">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-4">We Appreciate Your Message</h2>
+      <p class="text-gray-300 mb-6">
+        Your thoughts, questions, and feedback are valuable. While you wait for a reply, feel free to explore the latest music, stories, and posts on Raven Hunt.
+      </p>
+      <a href="/index.html" 
+         class="inline-block bg-gradient-to-r from-purple-700 via-pink-500 to-yellow-400 text-black font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-all">
+        Return Home
+      </a>
+    </section>
+
+    <!-- Social Links -->
+    <section class="text-center">
+      <h3 class="text-2xl font-bold text-purple-400 mb-4">Follow Raven Hunt</h3>
+      <div class="flex justify-center gap-6">
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@raven-hunt" target="_blank" rel="noopener" aria-label="YouTube" class="hover:opacity-80">
+          <img src="/icons/YouTube_full-color_icon_(2017).png" alt="YouTube" class="h-6 w-6 object-contain" />
+        </a>
+        <!-- Spotify -->
+        <a href="https://open.spotify.com/artist/4KsTubibdCXv3IQ8off6iA" target="_blank" rel="noopener" aria-label="Spotify" class="hover:opacity-80">
+          <img src="/icons/Spotify_logo_without_text.png" alt="Spotify" class="h-6 w-6 object-contain" />
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/raven.hunt.official" target="_blank" rel="noopener" aria-label="Instagram" class="hover:opacity-80">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="h-6 w-6 object-contain" />
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@raven_hunt_official" target="_blank" rel="noopener" aria-label="TikTok" class="hover:opacity-80">
+          <img src="/icons/Tiktok_icon.png" alt="TikTok" class="h-6 w-6 object-contain" />
+        </a>
+        <!-- Apple Music -->
+        <a href="https://music.apple.com/us/artist/raven-hunt/1641396078" target="_blank" rel="noopener" aria-label="Apple Music" class="hover:opacity-80">
+          <img src="/icons/AppleMusicIcon_macOS_2x-removebg-preview.png" alt="Apple Music" class="h-6 w-6 object-contain" />
+        </a>
+        <!-- Boomplay -->
+        <a href="https://www.boomplay.com/artists/113103124?from=search&srModel=COPYLINK&srList=WEB" target="_blank" rel="noopener" aria-label="Boomplay" class="hover:opacity-80">
+          <img src="/icons/boomplay.png" alt="Boomplay" class="h-6 w-6 object-contain" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-purple-900 via-purple-800 to-black py-8 text-center text-gray-500">
+    <p>&copy; 2025 Raven Hunt. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

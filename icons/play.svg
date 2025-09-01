@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 256 256">
+  <defs>
+    <!-- Outer shape gradient -->
+    <linearGradient id="ravenGradientOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b21a8" />    <!-- deep purple -->
+      <stop offset="50%" stop-color="#1e1b4b" />   <!-- dark blue -->
+      <stop offset="100%" stop-color="#facc15" />  <!-- golden sunray -->
+    </linearGradient>
+
+    <!-- Inner triangle gradient -->
+    <linearGradient id="ravenGradientInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95" />    <!-- royal purple -->
+      <stop offset="50%" stop-color="#0f172a" />   <!-- navy black -->
+      <stop offset="100%" stop-color="#fcd34d" />  <!-- warm gold -->
+    </linearGradient>
+  </defs>
+
+  <g stroke="none">
+    <!-- Outer curved shape (play button base) -->
+    <path 
+      d="M27.314 2.29c-2.979 1.72-4.83 4.926-4.83 8.366v228.882c0 3.439 1.851 6.646 4.829 8.365 
+         2.98 1.72 6.681 1.72 9.66.002l198.22-114.441c2.979-1.722 4.83-4.928 4.83-8.366 
+         0-3.44-1.851-6.646-4.83-8.366L36.975 2.29c-2.979-1.72-6.681-1.72-9.661 0z"
+      fill="url(#ravenGradientOuter)"
+    />
+
+    <!-- Play triangle (center) with gradient -->
+    <path 
+      d="M32.145 10.656 230.364 125.097 32.145 239.538z" 
+      fill="url(#ravenGradientInner)"
+    />
+  </g>
+</svg>
+
+

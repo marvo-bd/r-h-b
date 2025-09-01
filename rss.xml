@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <!-- Basic Info -->
+    <title>Raven Hunt Blog</title>
+    <link>https://blog.ravenhunt.xyz/</link>
+    <description>A blog where music, emotions, and storytelling intersect. Welcome to the world of Raven Hunt.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2025 12:00:00 +0300</lastBuildDate>
+
+    <!-- First Blog Post -->
+    <item>
+      <title>Welcome to the World of Raven Hunt</title>
+      <link>https://blog.ravenhunt.xyz/posts/welcome-to-the-world-of-raven-hunt.html</link>
+      <guid>https://blog.ravenhunt.xyz/posts/welcome-to-the-world-of-raven-hunt.html</guid>
+      <pubDate>Mon, 01 Sep 2025 12:00:00 +0300</pubDate>
+      <description><![CDATA[
+        Raven Hunt welcomes you to the world of music, emotions, and storytelling. Explore the vision behind the music and join the community.
+      ]]></description>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<!-- expand.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="url(#expandGradient)" stroke-width="2">
+  <defs>
+    <linearGradient id="expandGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B21A8"/> <!-- purple-700 -->
+      <stop offset="100%" stop-color="#FACC15"/> <!-- yellow-400 -->
+    </linearGradient>
+  </defs>
+
+  <!-- ⬆️ Top-left arrow -->
+  <polyline points="4 9 4 4 9 4" />
+  <line x1="4" y1="4" x2="10" y2="10" />
+
+  <!-- ⬇️ Bottom-right arrow -->
+  <polyline points="20 15 20 20 15 20" />
+  <line x1="20" y1="20" x2="14" y2="14" />
+
+  <!-- ⬆️ Top-right arrow -->
+  <polyline points="15 4 20 4 20 9" />
+  <line x1="20" y1="4" x2="14" y2="10" />
+
+  <!-- ⬇️ Bottom-left arrow -->
+  <polyline points="9 20 4 20 4 15" />
+  <line x1="4" y1="20" x2="10" y2="14" />
+</svg>
+

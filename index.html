@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta -->
+  <title>Raven Hunt Blog | Thoughts, Music & Stories</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="alternate" type="application/rss+xml" title="Raven Hunt Blog RSS Feed" href="https://blog.ravenhunt.xyz/rss.xml">
+  <meta name="theme-color" content="#8b5cf6">
+  <meta name="description" content="Official Raven Hunt blog. Discover thoughts, stories, and reflections from the faceless indie artist behind haunting melodies." />
+  <meta name="keywords" content="Raven Hunt, blog, indie pop, music, thoughts, lyrics, stories, angels don't chase demons" />
+  <meta name="author" content="Raven Hunt" />
+  <link rel="canonical" href="https://blog.ravenhunt.xyz/" />
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Raven Hunt Blog | Thoughts, Music & Stories" />
+  <meta property="og:description" content="Official Raven Hunt blog. Discover thoughts, stories, and reflections from the faceless indie artist behind haunting melodies." />
+  <meta property="og:image" content="https://blog.ravenhunt.xyz/images/cover-default.jpg" />
+  <meta property="og:url" content="https://blog.ravenhunt.xyz/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Raven Hunt Blog | Thoughts, Music & Stories">
+  <meta name="twitter:description" content="Official Raven Hunt blog. Discover thoughts, stories, and reflections from the faceless indie artist behind haunting melodies.">
+  <meta name="twitter:image" content="https://blog.ravenhunt.xyz/images/cover-default.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicons/site.webmanifest" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
+
+    /* Pulsating yellow halo */
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 10px 5px rgba(252,211,77,0.4); }
+      50% { box-shadow: 0 0 12px 8px rgba(252,211,77,0.6); }
+      100% { box-shadow: 0 0 10px 5px rgba(252,211,77,0.4); }
+    }
+    .pulse-glow {
+      animation: pulseGlow 2s infinite;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50 px-4 py-4 flex justify-between items-center">
+    <a href="/" class="flex items-center gap-2">
+      <img src="/images/raven-logo.png" alt="Raven Hunt Logo" class="h-10 w-auto">
+      <span class="text-xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">Raven Hunt Blog</span>
+    </a>
+    <nav class="hidden md:flex gap-6">
+      <a href="/about.html" class="hover:text-yellow-400">About</a>
+      <a href="/contact.html" class="hover:text-yellow-400">Join the Hunt</a>
+    </nav>
+    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5">
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col absolute top-16 left-0 w-full bg-black/80 backdrop-blur-md p-4 gap-4 md:hidden">
+    <a href="/" class="hover:text-yellow-400">Home</a>
+    <a href="/about.html" class="hover:text-yellow-400">About</a>
+    <a href="/contact.html" class="hover:text-yellow-400">Join the Hunt</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="pt-28 px-4 text-center max-w-3xl mx-auto">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to the Raven Hunt Blog</h1>
+    <p class="text-gray-400 text-lg md:text-xl italic">Reflections, stories, and insights from the faceless indie artist behind haunting melodies.</p>
+  </section>
+
+  <!-- Featured + Latest Posts Section -->
+<section id="featured-latest" class="w-full py-24 bg-black/70 text-white px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 id="recent-posts" class="text-3xl sm:text-4xl font-bold mb-12 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent border-b border-gray-700 pb-3">
+      Posts
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Featured and Latest posts will be dynamically loaded here by main.js -->
+      <div id="featured-post-container" class="col-span-1 md:col-span-2 h-auto"></div>
+      <div id="latest-post-container" class="h-auto"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Regular Posts Section (Horizontal Layout, Smaller Cards) -->
+<section id="regular-posts" class="w-full py-16 bg-black/70 text-white px-6">
+  <div class="max-w-6xl mx-auto flex flex-col gap-6">
+    <h3 class="text-3xl sm:text-4xl font-bold mb-12 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent border-b border-gray-700 pb-3">
+      More Posts
+    </h3>
+
+    <!-- Container for dynamically loaded regular posts -->
+    <div id="regular-posts-container" class="flex flex-col gap-6">
+      <!-- JS will inject up to 4 posts initially -->
+    </div>
+
+    <!-- Read More Button -->
+    <div class="flex justify-center mt-6">
+      <button id="load-more-btn" class="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition-colors text-white font-bold">
+        Load More
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div class=" bottom-4 left-0 w-full flex flex-col items-center text-xs z-50">
+  <div class="flex gap-6 items-center mb-2">
+
+    <!-- YouTube (Red) -->
+    <a href="https://www.youtube.com/@raven-hunt" target="_blank" rel="noopener" aria-label="Youtube" class="hover:opacity-80">
+      <img src="/icons/YouTube_full-color_icon_(2017).png" alt="Youtube" class="h-6 w-6 object-contain" />
+    </a>
+
+    <!-- Spotify (Green) -->
+    <a href="https://open.spotify.com/artist/4KsTubibdCXv3IQ8off6iA" target="_blank" rel="noopener" aria-label="Spotify" class="hover:opacity-80">
+      <img src="/icons/Spotify_logo_without_text.png" alt="Spotify" class="h-6 w-6 object-contain" />
+    </a>
+
+    <!-- Instagram (Gradient) -->
+    <a href="https://www.instagram.com/raven.hunt.official" target="_blank" rel="noopener" aria-label="Instagram" class="hover:opacity-80">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="h-6 w-6 object-contain" />
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@raven_hunt_official" target="_blank" rel="noopener" aria-label="TikTok" class="hover:opacity-80">
+      <img src="/icons/Tiktok_icon.png" alt="TikTok" class="h-6 w-6 object-contain" />
+    </a>
+
+    <!-- Apple Music -->
+    <a href="https://music.apple.com/us/artist/raven-hunt/1641396078" target="_blank" rel="noopener" aria-label="Apple Music" class="hover:opacity-80">
+      <img src="/icons/AppleMusicIcon_macOS_2x-removebg-preview.png" alt="Apple Music" class="h-6 w-6 object-contain" />
+    </a>
+
+    <!-- Boomplay -->
+    <a href="https://www.boomplay.com/artists/113103124?from=search&srModel=COPYLINK&srList=WEB" target="_blank" rel="noopener" aria-label="Boomplay" class="hover:opacity-80">
+      <img src="/icons/boomplay.png" alt="Boomplay" class="h-6 w-6 object-contain" />
+    </a>
+  </div>
+
+  <div class="space-x-6">
+    <a href="https://www.ravenhunt.xyz/privacy.html" target="_blank" rel="noopener" class="hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent transition">Privacy & Cookie Policy</a>
+  </div>
+
+  <p class="text-white opacity-60">© 2025 Raven Hunt. All rights reserved.</p>
+</div>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-purple-900/60 backdrop-blur-md text-white p-4 shadow-lg flex flex-col sm:flex-row items-center justify-between z-50 hidden">
+  <p class="text-sm mb-2 sm:mb-0">
+    This site uses third-party cookies to improve performance and user experience. 
+    By using any Raven Hunt Website, you agree to their use. See our 
+    <a href="https://www.ravenhunt.xyz/privacy.html" target="_blank" rel="noopener" class="text-yellow-400 hover:text-white underline">Privacy & Cookie Policy</a>.
+  </p>
+  <button id="cookie-accept" class="bg-yellow-400 text-purple-900 font-semibold px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+    Got it
+  </button>
+</div>
+
+<!-- Scripts -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+  document.addEventListener("DOMContentLoaded", function () {
+      const banner = document.getElementById("cookie-banner");
+      const accepted = localStorage.getItem("cookieConsent");
+
+      if (!accepted) {
+        banner.classList.remove("hidden");
+      }
+
+      document.getElementById("cookie-accept").addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "true");
+        banner.classList.add("hidden");
+      });
+    });
+</script>
+
+<!-- Load main.js to dynamically render posts -->
+<script src="/js/main.js"></script>
+
+</body>
+</html>

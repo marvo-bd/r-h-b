@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Raven Hunt | Indie Music, Stories & Insights</title>
+  <meta name="description" content="Learn more about Raven Hunt — the mind behind indie pop and bedroom pop creations. Discover the story, inspirations, and vision that fuel the music and storytelling.">
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Glow effects */
+    .glow-purple { box-shadow: 0 0 15px 3px rgba(139, 92, 246, 0.6); }
+    .glow-yellow { box-shadow: 0 0 20px 5px rgba(250, 204, 21, 0.7); }
+    .glow-pink { box-shadow: 0 0 15px 3px rgba(236, 72, 153, 0.6); }
+    .social-icon img { transition: all 0.3s ease; }
+    .social-icon img:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 6px #FACC15) drop-shadow(0 0 4px #EC4899) drop-shadow(0 0 3px #8B5CF6);
+    }
+    .line-clamp-4 {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    /* Gradient animated border for highlights */
+    @keyframes gradient-border {
+      0% { border-color: #8B5CF6; }
+      25% { border-color: #FACC15; }
+      50% { border-color: #EC4899; }
+      75% { border-color: #14B8A6; }
+      100% { border-color: #8B5CF6; }
+    }
+    .animate-gradient-border { animation: gradient-border 3s infinite; }
+  </style>
+</head>
+<body class="bg-black text-gray-200 font-sans">
+
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-purple-800 via-purple-900 to-black py-16 px-6 text-center relative overflow-hidden">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-purple-400 drop-shadow-lg mb-4">About Raven Hunt</h1>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl">
+      Explore the vision, music, and stories behind Raven Hunt — a journey into indie melodies, emotions, and creative storytelling.
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-6 md:px-12 py-12 space-y-16">
+
+    <!-- Bio Section -->
+    <section class="flex flex-col md:flex-row items-center gap-8">
+      <img src="/images/silhouette.png" alt="Raven Hunt" class="w-48 h-48 md:w-64 md:h-64 rounded-full glow-purple object-cover">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold text-purple-400 mb-4">The Story Behind Raven Hunt</h2>
+        <p class="text-gray-300 line-clamp-4 mb-4">
+          Raven Hunt is the persona of an indie artist blending bedroom pop and emotional storytelling into music that resonates. Every track is carefully crafted to evoke feelings, memories, and imagination — a personal journey shared with listeners around the world.
+        </p>
+        <p class="text-gray-300 line-clamp-4">
+          Beyond music, Raven Hunt curates experiences through stories, visuals, and immersive content, exploring themes of love, heartbreak, and self-discovery. The work aims to inspire reflection, creativity, and emotional connection.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section>
+      <h2 class="text-3xl font-bold text-pink-400 mb-6">Mission & Vision</h2>
+      <p class="text-gray-300 mb-4">
+        Raven Hunt’s mission is to create a universe where music and storytelling meet — blending soundscapes, lyrics, and visuals into a cohesive experience. The vision is to connect with an audience who seeks authenticity, emotion, and artistic exploration.
+      </p>
+      <p class="text-gray-300">
+        Every release, blog post, and visual project reflects a commitment to artistry, imagination, and community — crafting an environment where listeners and readers feel seen, inspired, and part of the journey.
+      </p>
+    </section>
+
+    <!-- Connect / Social Section -->
+    <section>
+      <h2 class="text-3xl font-bold text-pink-400 mb-6">Connect & Follow</h2>
+      <p class="text-gray-300 mb-4">
+        Join the journey, stay updated on new music, stories, and exclusive insights. Follow Raven Hunt across platforms.
+      </p>
+      <div class="flex flex-wrap gap-6">
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@raven-hunt" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+          <img src="/icons/YouTube_full-color_icon_(2017).png" alt="YouTube" class="h-6 w-6 object-contain">
+        </a>
+        <!-- Spotify -->
+        <a href="https://open.spotify.com/artist/4KsTubibdCXv3IQ8off6iA" target="_blank" rel="noopener" aria-label="Spotify" class="social-icon">
+          <img src="/icons/Spotify_logo_without_text.png" alt="Spotify" class="h-6 w-6 object-contain">
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/raven.hunt.official" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="h-6 w-6 object-contain">
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@raven_hunt_official" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+          <img src="/icons/Tiktok_icon.png" alt="TikTok" class="h-6 w-6 object-contain">
+        </a>
+        <!-- Apple Music -->
+        <a href="https://music.apple.com/us/artist/raven-hunt/1641396078" target="_blank" rel="noopener" aria-label="Apple Music" class="social-icon">
+          <img src="/icons/AppleMusicIcon_macOS_2x-removebg-preview.png" alt="Apple Music" class="h-6 w-6 object-contain">
+        </a>
+        <!-- Boomplay -->
+        <a href="https://www.boomplay.com/artists/113103124?from=search&srModel=COPYLINK&srList=WEB" target="_blank" rel="noopener" aria-label="Boomplay" class="social-icon">
+          <img src="/icons/boomplay.png" alt="Boomplay" class="h-6 w-6 object-contain">
+        </a>
+        <!-- Community -->
+        <a href="https://forms.gle/FUuyKz4CNnE56vZq6" target="_blank" rel="noopener" aria-label="Google-Forms" class="social-icon">
+            <img src="/images/raven-logo.png" alt="Community" class="h-6 w-6 object-contain">
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-purple-900 via-pink-900 to-yellow-400 py-8 text-center text-gray-500">
+    <p>&copy; 2025 Raven Hunt. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

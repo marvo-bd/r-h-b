@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="ravenVolume" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b21a8"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#ravenVolume)" d="M96 80H48a8 8 0 0 0-8 8v80a8 8 0 0 0 8 8h48l60.69 48.55A8 8 0 0 0 176 216V40a8 8 0 0 0-13.31-6.55Z"/>
+  <path fill="url(#ravenVolume)" d="M192.49 64.49a8 8 0 1 0-11.32 11.32 56 56 0 0 1 0 79.38 8 8 0 0 0 11.32 11.32 72 72 0 0 0 0-102.02z"/>
+  <path fill="url(#ravenVolume)" d="M213.82 42.18a8 8 0 0 0-11.31 11.31 88 88 0 0 1 0 124.98 8 8 0 1 0 11.31 11.31 104 104 0 0 0 0-147.6z"/>
+</svg>
+
