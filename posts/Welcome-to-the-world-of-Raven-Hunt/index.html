@@ -18,7 +18,7 @@
         <!-- Open Graph / Facebook -->
         <meta property="og:title" content="Welcome to the World of Raven Hunt | Music Blog">
         <meta property="og:description" content="Discover the world of Raven Hunt: music, storytelling, and emotions. Explore our vision and blog posts.">
-        <meta property="og:image" content="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover%20image.jpg">
+        <meta property="og:image" content="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover-image.jpg">
         <meta property="og:url" content="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt">
         <meta property="og:type" content="article">
         <meta property="og:site_name" content="Raven Hunt">
@@ -27,7 +27,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Welcome to the World of Raven Hunt | Music Blog">
         <meta name="twitter:description" content="Discover the world of Raven Hunt: music, storytelling, and emotions. Explore our vision and blog posts.">
-        <meta name="twitter:image" content="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover%20image.jpg">
+        <meta name="twitter:image" content="https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover-image.jpg">
         <meta name="twitter:site" content="@raven_hunt_official">
       
         <!-- Structured Data (JSON-LD for BlogPosting) -->
@@ -40,7 +40,7 @@
             "@id": "https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt"
           },
           "headline": "Welcome to the World of Raven Hunt",
-          "image": ["https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover%20image.jpg"],
+          "image": ["https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover-image.jpg"],
           "author": {
             "@type": "Person",
             "name": "Raven Hunt"
@@ -114,7 +114,7 @@
 
     <!-- Featured Image -->
     <section>
-      <img src="/posts/Welcome-to-the-world-of-Raven-Hunt/cover image.jpg" alt="Welcome to the World of Raven Hunt" class="w-full h-96 object-cover rounded-xl glow-yellow shadow-lg mb-6">
+      <img src="/posts/Welcome-to-the-world-of-Raven-Hunt/cover-image.jpg" alt="Welcome to the World of Raven Hunt" class="w-full h-96 object-cover rounded-xl glow-yellow shadow-lg mb-6">
     </section>
 
     <!-- Blog Content -->
@@ -123,7 +123,7 @@
       <!-- Post Metadata -->
       <meta itemprop="datePublished" content="2025-09-01">
       <meta itemprop="author" content="Raven Hunt">
-      <p class="text-gray-400 text-sm">September 1, 2025 • 4 min read</p>
+      <p class="text-gray-400 text-sm">September 1, 2025 • 3 min read</p>
 
       <h2 class="text-2xl">It's finally happening. A space that I can actually visualize my thoughts, not just through music but through words too. Welcome To <span class="text-purple-400">The World of Raven Hunt</span>. Welcome to my world.</h2>
 
@@ -145,37 +145,10 @@
       </section>
 
       <!-- Share Buttons -->
-        <section class="bg-black/80 p-6 rounded-xl shadow-lg glow-yellow mt-8">
-            <h2 class="text-2xl font-bold text-yellow-400 mb-4">Share This Article</h2>
-            <div class="flex gap-4 flex-wrap">
-            <!-- Twitter / X -->
-            <a href="https://twitter.com/intent/tweet?url=https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt&text=Check%20out%20this%20article%20on%20Raven%20Hunt!"
-                target="_blank" rel="noopener"
-                class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-                Twitter / X
-            </a>
-        
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt"
-                target="_blank" rel="noopener"
-                class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition">
-                Facebook
-            </a>
-        
-            <!-- Pinterest -->
-            <a href="https://pinterest.com/pin/create/button/?url=https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt&media=https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/cover%20image.jpg&description=Welcome%20to%20the%20World%20of%20Raven%20Hunt"
-                target="_blank" rel="noopener"
-                class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
-                Pinterest
-            </a>
-        
-            <!-- Copy Link -->
-            <button onclick="copyLink()"
-                class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition">
-                Copy Link
-            </button>
-            </div>
-        </section>
+      <section id="share-section" class="bg-black/80 p-6 rounded-xl shadow-lg glow-yellow mt-8">
+        <h2 class="text-2xl font-bold text-yellow-400 mb-4">Share This Article</h2>
+        <div id="share-buttons" class="flex gap-4 flex-wrap"></div>
+      </section>
 
         <div id="toast" class="fixed bottom-6 right-6 bg-yellow-400 text-black font-semibold px-4 py-3 rounded-lg shadow-lg opacity-0 pointer-events-none transition-all duration-500 transform translate-y-4">
             ✅ Link copied to clipboard!
@@ -211,33 +184,16 @@
       </section>
 
       <!-- Suggested Articles -->
-      <!-- <section class="mt-12">
+      <section class="mt-12" id="suggested-section">
         <h2 class="text-2xl font-bold text-purple-400 mb-6">More Articles</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          
-          <article class="bg-black/80 rounded-xl shadow-lg hover-glow overflow-hidden">
-            <img src="/posts/frozen-in-time/cover.jpg" alt="Why 'Frozen in Time' Almost Didn’t Exist" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <h3 class="text-xl font-bold text-yellow-400 mb-1">
-                <a href="/posts/frozen-in-time/" class="hover:underline">Why "Frozen in Time" Almost Didn’t Exist</a>
-              </h3>
-              <p class="text-gray-400 text-sm mb-2">July 2025 • 4 min read</p>
-              <p class="text-gray-300 line-clamp-4">Sometimes songs fight to be heard. Here’s the story of how "Frozen in Time" came to life, and the struggles behind its creation.</p>
-            </div>
-          </article>
-
-          <article class="bg-black/80 rounded-xl shadow-lg hover-glow overflow-hidden">
-            <img src="/posts/another-post/cover.jpg" alt="Another Blog Post" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <h3 class="text-xl font-bold text-yellow-400 mb-1">
-                <a href="/posts/another-post/" class="hover:underline">Another Post Example</a>
-              </h3>
-              <p class="text-gray-400 text-sm mb-2">June 2025 • 3 min read</p>
-              <p class="text-gray-300 line-clamp-4">Short teaser text that makes the reader want to click and read more about this story...</p>
-            </div>
-          </article>
+        <div id="suggested-articles" class="grid md:grid-cols-3 gap-6"></div>
+        <div class="mt-6 text-center">
+          <button id="load-more-suggestions" class="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+            Load More
+          </button>
         </div>
-      </section> -->
+      </section>
+      
 
     </article>
   </main>
@@ -287,6 +243,7 @@
     </div>
 
   <!-- Scripts -->
+  <script src="/js/article.js"></script>
   <script>
     // Reading progress bar
     window.addEventListener('scroll', () => {
@@ -319,6 +276,8 @@
         toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
         }, 2500);
     }
+
+    loadSuggestedArticles("welcome-to-the-world-of-raven-hunt");
   </script>
 
 </body>

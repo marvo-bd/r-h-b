@@ -4,12 +4,24 @@
       "title": "Welcome To The World of Raven Hunt",
       "description": "It's finally happening. A space that I can actually visualize my thoughts, not..." ,
       "url": "/posts/Welcome-to-the-world-of-Raven-Hunt",
-      "cover": "/posts/Welcome-to-the-world-of-Raven-Hunt/cover image.jpg",
+      "cover": "/posts/Welcome-to-the-world-of-Raven-Hunt/cover-image.jpg",
       "date": "2025-09-01",
       "duration": "3",
       "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "personal journey"],
-      "latest": true,
+      "latest": false,
       "featured": true
+    },
+    {
+      "id": "built-to-love-you-is-finally-out",
+      "title": "Built to Love You is finally OUT!!!",
+      "description": "The long awaited track Built to Love You is finally out in your favorite music platforms..." ,
+      "url": "/posts/built-to-love-you-is-finally-out",
+      "cover": "/posts/built-to-love-you-is-finally-out/cover-image.jpg",
+      "date": "2025-09-02",
+      "duration": "5",
+      "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "release", "built to love you", "music release"],
+      "latest": true,
+      "featured": false
     }
   ]
   

@@ -75,7 +75,7 @@ function renderLatestPost(post) {
         <h3 class="text-2xl font-bold mb-1 group-hover:text-purple-400 transition-colors">
           <a href="${post.url}" class="hover:underline">${post.title}</a>
         </h3>
-        <p class="text-gray-400 mb-2">${formatDate(post.date)} • 4 min read</p>
+        <p class="text-gray-400 mb-2">${formatDate(post.date)} • ${post.duration} min read</p>
         <p class="text-gray-300 line-clamp-3">${post.description}</p>
       </div>
     </article>
@@ -98,7 +98,7 @@ function renderRegularPosts() {
           <!-- Text Right -->
           <div class="p-4 flex flex-col justify-center md:w-2/3">
             <h3 class="text-xl font-bold mb-1 group-hover:text-pink-400 transition-colors">${post.title}</h3>
-            <p class="text-gray-400 mb-1 text-sm">${formatDate(post.date)} • 3 min read</p>
+            <p class="text-gray-400 mb-1 text-sm">${formatDate(post.date)} • ${post.duration} min read</p>
             <p class="text-gray-300 line-clamp-3 text-sm">${post.description}</p>
           </div>
         </a>
