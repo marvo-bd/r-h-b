@@ -9,6 +9,22 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- pages -->
+
+  <url>
+    <loc>https://blog.ravenhunt.xyz/about.html</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://blog.ravenhunt.xyz/contact.html</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog Posts -->
   <url>
     <loc>https://blog.ravenhunt.xyz/posts/Welcome-to-the-world-of-Raven-Hunt/</loc>
