@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <!-- Basic Info -->
     <title>Raven Hunt Blog</title>
     <link>https://blog.ravenhunt.xyz/</link>
     <description>A blog where music, emotions, and storytelling intersect. Welcome to the world of Raven Hunt.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Sep 2025 12:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 03 Sep 2025 12:00:00 +0300</lastBuildDate>
+    <atom:link href="https://blog.ravenhunt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
+
 
     <!-- First Blog Post -->
     <item>
@@ -20,12 +22,22 @@
     </item>
 
      <item>
-      <title>Welcome to the World of Raven Hunt</title>
+      <title>"Built to Love You" is Finally Out</title>
       <link>https://blog.ravenhunt.xyz/posts/built-to-love-you-is-finally-out/</link>
       <guid>https://blog.ravenhunt.xyz/posts/built-to-love-you-is-finally-out/</guid>
       <pubDate>Tue, 02 Sep 2025 12:00:00 +0300</pubDate>
       <description><![CDATA[
         The long awaited track Built to Love You is finally out in your favorite music platforms.
+      ]]></description>
+    </item>
+
+    <item>
+      <title>Why Sad Songs Heal Us More Than Happy Songs</title>
+      <link>https://blog.ravenhunt.xyz/posts/why-sad-songs-heal-us-more-than-happy-songs/</link>
+      <guid>https://blog.ravenhunt.xyz/posts/why-sad-songs-heal-us-more-than-happy-songs/</guid>
+      <pubDate>Wed, 03 Sep 2025 12:00:00 +0300</pubDate>
+      <description><![CDATA[
+        Why do sad songs comfort us more than happy ones? Here's how and why emotional music heals heartbreak, loneliness, and heavy feelings.
       ]]></description>
     </item>
 

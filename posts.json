@@ -20,6 +20,18 @@
       "date": "2025-09-02",
       "duration": "5",
       "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "release", "built to love you", "music release"],
+      "latest": false,
+      "featured": false
+    },
+    {
+      "id": "why-sad-songs-heal-us-more-than-happy-songs",
+      "title": "Why Sad Songs Heal Us More Than Happy Songs",
+      "description": "It feels almost contradictory; shouldn’t happiness lift us when we’re down? But the truth is, when I’m hurting, it’s the sad songs that hold me." ,
+      "url": "/posts/why-sad-songs-heal-us-more-than-happy-songs/",
+      "cover": "/posts/why-sad-songs-heal-us-more-than-happy-songs/why-sad-songs-heal-anime-raven-hunt.webp",
+      "date": "2025-09-03",
+      "duration": "8",
+      "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs"],
       "latest": true,
       "featured": false
     }
