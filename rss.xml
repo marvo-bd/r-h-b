@@ -6,7 +6,7 @@
     <link>https://blog.ravenhunt.xyz/</link>
     <description>A blog where music, emotions, and storytelling intersect. Welcome to the world of Raven Hunt.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Sep 2025 12:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 14 Sep 2025 12:00:00 +0300</lastBuildDate>
     <atom:link href="https://blog.ravenhunt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
 
 
@@ -38,6 +38,16 @@
       <pubDate>Wed, 03 Sep 2025 12:00:00 +0300</pubDate>
       <description><![CDATA[
         Why do sad songs comfort us more than happy ones? Here's how and why emotional music heals heartbreak, loneliness, and heavy feelings.
+      ]]></description>
+    </item>
+
+    <item>
+      <title>The Science of Music and Memory: Why Some Songs Stick Forever</title>
+      <link>https://blog.ravenhunt.xyz/posts/the-science-of-music-and-memory/</link>
+      <guid>https://blog.ravenhunt.xyz/posts/the-science-of-music-and-memory/</guid>
+      <pubDate>Sun, 14 Sep 2025 12:00:00 +0300</pubDate>
+      <description><![CDATA[
+        Some songs fade away, while others live inside us forever. Let’s uncover why.
       ]]></description>
     </item>
 

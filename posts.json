@@ -9,7 +9,7 @@
       "duration": "3",
       "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "personal journey"],
       "latest": false,
-      "featured": true
+      "featured": false
     },
     {
       "id": "built-to-love-you-is-finally-out",
@@ -31,6 +31,18 @@
       "cover": "/posts/why-sad-songs-heal-us-more-than-happy-songs/why-sad-songs-heal-anime-raven-hunt.webp",
       "date": "2025-09-03",
       "duration": "8",
+      "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs"],
+      "latest": false,
+      "featured": true
+    },
+    {
+      "id": "the-science-of-music-and-memory",
+      "title": "The Science of Music and Memory: Why Some Songs Stick Forever",
+      "description": "I know, it's weird but herein lies the truth. There's a kind of magic in some songs that just lingers even decades later. You hear one note,..." ,
+      "url": "/posts/the-science-of-music-and-memory/",
+      "cover": "/posts/the-science-of-music-and-memory/notes-in neuro-pathways.webp",
+      "date": "2025-09-14",
+      "duration": "9",
       "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs"],
       "latest": true,
       "featured": false
