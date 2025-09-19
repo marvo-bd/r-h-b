@@ -6,7 +6,7 @@
     <link>https://blog.ravenhunt.xyz/</link>
     <description>A blog where music, emotions, and storytelling intersect. Welcome to the world of Raven Hunt.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Sep 2025 12:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 19 Sep 2025 12:00:00 +0300</lastBuildDate>
     <atom:link href="https://blog.ravenhunt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
 
 
@@ -48,6 +48,16 @@
       <pubDate>Sun, 14 Sep 2025 12:00:00 +0300</pubDate>
       <description><![CDATA[
         Some songs fade away, while others live inside us forever. Let’s uncover why.
+      ]]></description>
+    </item>
+
+    <item>
+      <title>How Writing Lyrics Feel Like Therapy</title>
+      <link>https://blog.ravenhunt.xyz/posts/how-writing-lyrics-feels-like-therapy/</link>
+      <guid>https://blog.ravenhunt.xyz/posts/how-writing-lyrics-feels-like-therapy/</guid>
+      <pubDate>Fri, 19 Sep 2025 12:00:00 +0300</pubDate>
+      <description><![CDATA[
+        Music heals, and sometimes writing lyrics feels like sitting on a therapist’s couch with only a pen and a blank page.
       ]]></description>
     </item>
 

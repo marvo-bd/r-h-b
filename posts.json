@@ -44,6 +44,18 @@
       "date": "2025-09-14",
       "duration": "9",
       "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs"],
+      "latest": false,
+      "featured": false
+    },
+    {
+      "id": "how-writing-lyrics-feels-like-therapy",
+      "title": "How Writing Lyrics Feel Like Therapy",
+      "description": "Music? Well, if you are a fan of mine, you most well kow that music is the number 1 way I know conveys mesages and feelings perfectly. So I decided to write an article, on a personal point of view, how writing Lyrics, you know coming up ... " ,
+      "url": "/posts/how-writing-lyrics-feels-like-therapy/",
+      "cover": "/posts/how-writing-lyrics-feels-like-therapy/lyrics-on-a-notebook-with-a-pen.webp",
+      "date": "2025-09-19",
+      "duration": "5",
+      "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs", "lyrics"],
       "latest": true,
       "featured": false
     }
