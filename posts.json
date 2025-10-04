@@ -33,7 +33,7 @@
       "duration": "8",
       "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs"],
       "latest": false,
-      "featured": true
+      "featured": false
     },
     {
       "id": "the-science-of-music-and-memory",
@@ -45,7 +45,7 @@
       "duration": "9",
       "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs"],
       "latest": false,
-      "featured": false
+      "featured": true
     },
     {
       "id": "how-writing-lyrics-feels-like-therapy",
@@ -54,6 +54,18 @@
       "url": "/posts/how-writing-lyrics-feels-like-therapy/",
       "cover": "/posts/how-writing-lyrics-feels-like-therapy/lyrics-on-a-notebook-with-a-pen.webp",
       "date": "2025-09-19",
+      "duration": "5",
+      "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs", "lyrics"],
+      "latest": false,
+      "featured": false
+    },
+    {
+      "id": "how-i-write-when-inspiration-refuses-to-come",
+      "title": "How I Write When Inspiration Refuses to Come",
+      "description": "Every writer knows the feeling of staring at a blank page. Here’s how I write anyway, even when I'm not inspired enough, or at all" ,
+      "url": "/posts/how-i-write-when-inspiration-refuses-to-come/",
+      "cover": "posts/how-i-write-when-inspiration-refuses-to-come/writing-inspiration-coffee-notebook.webp",
+      "date": "2025-10-04",
       "duration": "5",
       "tags": ["music", "Raven Hunt", "The world of Raven Hunt", "sad songs", "happy songs", "songs", "lyrics"],
       "latest": true,

@@ -6,7 +6,7 @@
     <link>https://blog.ravenhunt.xyz/</link>
     <description>A blog where music, emotions, and storytelling intersect. Welcome to the world of Raven Hunt.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Sep 2025 12:00:00 +0300</lastBuildDate>
+    <lastBuildDate>FSat, 04 Oct 2025 12:00:00 +0300</lastBuildDate>
     <atom:link href="https://blog.ravenhunt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
 
 
@@ -58,6 +58,16 @@
       <pubDate>Fri, 19 Sep 2025 12:00:00 +0300</pubDate>
       <description><![CDATA[
         Music heals, and sometimes writing lyrics feels like sitting on a therapist’s couch with only a pen and a blank page.
+      ]]></description>
+    </item>
+
+    <item>
+      <title>How I Write When Inspiration Refuses to Come</title>
+      <link>https://blog.ravenhunt.xyz/posts/how-i-write-when-inspiration-refuses-to-come/</link>
+      <guid>https://blog.ravenhunt.xyz/posts/how-i-write-when-inspiration-refuses-to-come/</guid>
+      <pubDate>Sat, 04 Oct 2025 12:00:00 +0300</pubDate>
+      <description><![CDATA[
+        Every writer knows the feeling of staring at a blank page. Here’s how I write anyway, even when I'm not inspired enough, or at all
       ]]></description>
     </item>
 

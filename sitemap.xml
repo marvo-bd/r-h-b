@@ -5,7 +5,7 @@
 
   <url>
     <loc>https://blog.ravenhunt.xyz/rss.xml</loc>
-    <lastmod>2025-09-03</lastmod>
+    <lastmod>2025-10-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -66,6 +66,13 @@
   <url>
     <loc>https://blog.ravenhunt.xyz/posts/how-writing-lyrics-feels-like-therapy/</loc>
     <lastmod>2025-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://blog.ravenhunt.xyz/posts/how-i-write-when-inspiration-refuses-to-come/</loc>
+    <lastmod>2025-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
