@@ -24,7 +24,7 @@ fetch("/posts.json")
     if (latest) renderLatestPost(latest);
 
     // Prepare regular posts (exclude featured & latest)
-    regularPosts = allPosts.filter(p => !p.featured && !p.latest);
+    regularPosts = allPosts.filter(p => !p.featured && !p.latest).reverse();;
 
     // Render initial batch of regular posts
     renderRegularPosts();
