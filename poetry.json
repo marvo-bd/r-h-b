@@ -3,12 +3,23 @@
       "id": "the-words-i-wish-i-said",
       "title": "The Words I Wish I Said",
       "description": "An emotionally raw spoken word piece about regret, silence, and the echoes of what we never say.",
-      "date": "2025-10-12",
+      "date": "2025-10-14",
       "youtubeId": "awCw_q_xPCU", 
       "thumbnail": "/images/poetry/the-words-i-wish-i-said.webp",
       "url": "/spoken-word/the-words-i-wish-i-said/",
       "duration": "2:45",
       "featured": true
+    },
+    {
+      "id": "the-fact-that-i-love-you",
+      "title": "The Fact That I Love You",
+      "description": "A quiet, reflection on loving someone long after the story should’ve ended... raw, honest, and human than anything.",
+      "date": "2025-10-16",
+      "youtubeId": "W9HXG-vrlnY", 
+      "thumbnail": "/images/poetry/the-fact-that-i-love-you.webp",
+      "url": "/spoken-word/the-fact-that-i-love-you/",
+      "duration": "3:14",
+      "featured": false
     }
 ]
   

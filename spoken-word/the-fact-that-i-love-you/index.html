@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fact That I Love You | Spoken Word by Raven Hunt</title>
+    <meta name="description" content="A quiet, reflection on loving someone long after the story should’ve ended... raw, honest, and human than anything." />
+    <meta name="keywords" content="Raven Hunt, spoken word poetry, The Fact That I Love You, emotional poetry, regret poem, silence poem, heartfelt spoken word, contemporary poetry, spoken word performance, poem about unspoken words" />
+    <link rel="icon" href="/images/favicon.ico" />
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://blog.ravenhunt.xyz/spoken-word/the-fact-that-i-love-you/" />
+  
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Raven Hunt Blog RSS Feed" href="https://blog.ravenhunt.xyz/rss.xml" />
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="The Fact That I Love You | Spoken Word by Raven Hunt" />
+    <meta property="og:description" content="A quiet, reflection on loving someone long after the story should’ve ended... raw, honest, and human than anything." />
+    <meta property="og:image" content="https://blog.ravenhunt.xyz/images/poetry/the-fact-that-i-love-you.webp" />
+    <meta property="og:url" content="https://blog.ravenhunt.xyz/spoken-word/the-fact-that-i-love-you/" />
+    <meta property="og:type" content="music.song" />
+    <meta property="og:site_name" content="Raven Hunt" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Fact That I Love You | Spoken Word by Raven Hunt" />
+    <meta name="twitter:description" content="A quiet, reflection on loving someone long after the story should’ve ended... raw, honest, and human than anything." />
+    <meta name="twitter:image" content="https://blog.ravenhunt.xyz/images/poetry/the-fact-that-i-love-you.webp" />
+    <meta name="twitter:site" content="@raven_hunt_official" />
+  
+    <!-- Structured Data (JSON-LD for MusicRecording/SpokenWord) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicRecording",
+      "name": "The Fact That I Love You",
+      "url": "https://blog.ravenhunt.xyz/spoken-word/the-fact-that-i-love-you/",
+      "image": "https://blog.ravenhunt.xyz/images/poetry/the-fact-that-i-love-you.webp",
+      "description": "A quiet, reflection on loving someone long after the story should’ve ended... raw, honest, and human than anything.",
+      "inLanguage": "en",
+      "byArtist": {
+        "@type": "Person",
+        "name": "Raven Hunt",
+        "url": "https://blog.ravenhunt.xyz/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Raven Hunt",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://blog.ravenhunt.xyz/favicon.ico"
+        }
+      },
+      "genre": "Spoken Word Poetry",
+      "datePublished": "2025-10-16",
+      "keywords": ["spoken word", "poetry", "regret", "silence", "emotional expression"]
+    }
+    </script>
+  
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <!-- Styles -->
+    <style>
+      .glow-yellow {
+        box-shadow: 0 0 20px 5px rgba(250, 204, 21, 0.7);
+      }
+      #page-progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #facc15, #ec4899, #8b5cf6);
+        width: 0%;
+        z-index: 50;
+        transition: width 0.1s;
+      }
+      .line-clamp-4 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .hover-glow {
+        transition: all 0.3s ease;
+      }
+      .hover-glow:hover {
+        box-shadow: 0 0 15px 3px rgba(250, 204, 21, 0.7);
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  
+<body class="bg-black text-gray-200 font-sans relative">
+  <div id="page-progress-bar"></div>
+
+  <header class="bg-gradient-to-r from-purple-800 via-purple-900 to-black py-16 px-6 text-center relative overflow-hidden">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-yellow-400 drop-shadow-lg mb-4">The Fact That I Love You</h1>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl">
+      A quiet, reflection on loving someone long after the story should’ve ended... raw, honest, and human than anything.
+    </p>
+  </header>
+
+
+  <main class="px-6 md:px-12 py-12 space-y-16 max-w-5xl mx-auto">
+    <div class="relative w-full max-w-md mx-auto bg-black/70 border border-gray-700 rounded-xl overflow-hidden p-4">
+      <!-- Hidden YouTube iframe -->
+      <div class="hidden">
+        <iframe
+          id="yt-player"
+          src="https://www.youtube.com/embed/W9HXG-vrlnY?enablejsapi=1&controls=0&modestbranding=1&rel=0"
+          class="w-full aspect-video"
+          allow="autoplay"
+        ></iframe>
+      </div>
+
+      <!-- Custom Player -->
+      <div id="custom-player" class="relative z-10">
+        <div class="flex items-center justify-between mb-3">
+          <button id="toggle-btn" class="w-8 h-8">
+            <img id="playPauseIcon" src="/icons/play.png" alt="Play" class="w-full h-full object-contain" />
+          </button>
+          <span id="status-text" class="text-sm text-gray-300 ml-2 flex-1 pl-3">
+            The Fact That I Love You
+          </span>
+          <input
+            id="volume-slider"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="100"
+            class="w-32 h-1 rounded bg-gray-700 accent-yellow-400"
+          />
+        </div>
+
+        <div
+          id="progress-container"
+          class="w-full h-2 bg-black/30 rounded-full overflow-hidden cursor-pointer relative mt-2"
+        >
+          <div
+            id="progress-bar"
+            class="h-full w-0 transition-all duration-200"
+            style="background: linear-gradient(90deg, #1d1a2e, #2a2c49, #eab308);"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <article class="space-y-6">
+      <p class="text-gray-400 text-sm">October 16, 2025 • 3 min read</p>
+    
+      <h2 class="text-2xl font-bold text-yellow-400">The Fact That I Love You</h2>
+    
+      <section itemprop="articleBody" class="space-y-4">
+        <p>the fact that i love you<br>
+        doesn’t make sense anymore.</p>
+      
+        <p>it’s not poetic.<br>
+        it’s not cinematic.<br>
+        it’s not the kind of love people write about in songs.<br>
+        it’s just... there.<br>
+        persistent.<br>
+        ordinary.<br>
+        like a heartbeat I never asked for but can’t turn off.</p>
+      
+        <p>and maybe that’s what makes it worse.<br>
+        the fact that I still think about you<br>
+        even after deleting every trace of you<br>
+        but can’t delete the way your name feels in my mouth.</p>
+      
+        <p>the fact that I still defend you<br>
+        in conversations you’ll never hear.<br>
+        that I still pause at 11:11,<br>
+        like some part of me is thirteen again,<br>
+        believing the universe still takes requests.</p>
+      
+        <p>the fact that I love you<br>
+        means I still flinch at certain songs,<br>
+        still double-take when I catch your cologne in the air,<br>
+        still check my phone for messages I know won’t come.</p>
+      
+        <p>and I hate that love doesn’t need permission.<br>
+        that it lingers long after logic says “leave.”<br>
+        that it’s not about wanting you back<br>
+        it’s about not knowing where to put all this love now<br>
+        that you’re gone.</p>
+      
+        <p>I tried to give it to someone else once.<br>
+        he was kind.<br>
+        funny.<br>
+        safe.<br>
+        but when he said my name,<br>
+        it didn’t sound like a home I’d lived in before.</p>
+      
+        <p>and that’s when I realized<br>
+        the fact that I love you<br>
+        doesn’t mean I want you.<br>
+        it just means I still remember how to.</p>
+      
+        <p>it means I still carry the echo of something real<br>
+        in a world that keeps telling me to move on.</p>
+      
+        <p>so no, I’m not waiting for you.<br>
+        I’m just learning how to love<br>
+        without needing it to be returned.<br>
+        learning that some love stories<br>
+        don’t end, they just change shape.</p>
+      
+        <p>and maybe, someday,<br>
+        I’ll stop calling this love.<br>
+        maybe I’ll just call it<br>
+        proof<br>
+        that I once felt deeply<br>
+        and didn’t run from it.</p>
+      
+        <p>but for now…<br>
+        for now, the fact that I love you<br>
+        is just another truth I live with.<br>
+        quietly.<br>
+        honestly.<br>
+        and maybe,<br>
+        that’s enough.</p>
+      
+        <p>The end.</p>
+      
+        <p>So… yeah.<br>
+        That was my new piece, <strong>“The Fact That I Love You.”</strong></p>
+      
+        <p>I really hope it meant something to you.<br>
+        If it did, leave a like… and tell me how it made you feel down in the comments.<br>
+        I read them, every single one.</p>
+      
+        <p>And if you want to hear more pieces like this, go ahead and subscribe.<br>
+        It will also help me grow... So, do that for me, pretty please?</p>
+      
+        <p>Thanks for listening.<br>
+        And see you in the next one.</p>
+      
+        <p>Oh, and by the way, <strong>“Almost Said It”</strong> is coming out soon.<br>
+        So stay tuned...</p>
+      </section>
+      
+    </article>
+
+    <!-- Share Buttons -->
+    <section id="share-section" class="bg-black/80 p-6 rounded-xl shadow-lg glow-yellow mt-8">
+      <h2 class="text-2xl font-bold text-yellow-400 mb-4">Share This Poem</h2>
+      <div id="share-buttons" class="flex gap-4 flex-wrap"></div>
+    </section>
+
+
+    <div id="toast" class="fixed bottom-6 right-6 bg-yellow-400 text-black font-semibold px-4 py-3 rounded-lg shadow-lg opacity-0 pointer-events-none transition-all duration-500 transform translate-y-4">
+        ✅ Link copied to clipboard!
+    </div>
+
+    <!-- Join the Hunt Email Form -->
+    <section class="bg-black/80 p-6 rounded-xl shadow-lg glow-yellow mt-8">
+    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Join the Hunt</h2>
+    <p class="text-gray-300 mb-4">
+        <a href="https://forms.gle/FUuyKz4CNnE56vZq6" class="text-yellow-400">Subscribe</a> to get updates every time a new post goes live.
+    </p>
+    </section>
+
+    <!-- Comment Form -->
+    <section class="bg-black/80 p-6 rounded-xl shadow-lg glow-yellow mt-8">
+      <h2 class="text-2xl font-bold text-yellow-400 mb-4">Leave a Comment</h2>
+      <div id="comment-success" class="text-green-400 font-semibold mb-4 hidden">
+        Your comment has been submitted successfully!
+      </div>
+      <form id="comment-form" action="https://formsubmit.co/338c47d2ad25e2218208d19415c4b9c8" method="POST" class="space-y-4">
+        <input type="hidden" name="_next" id="next-url" value="">
+        <input type="hidden" name="post_title" value="The Fact That I Love You">
+        <input type="text" name="name" placeholder="Your Name" required
+          class="w-full rounded-xl bg-zinc-900 border border-purple-800/40 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-400 outline-none transition">
+        <input type="email" name="email" placeholder="Your Email" required
+          class="w-full rounded-xl bg-zinc-900 border border-purple-800/40 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-400 outline-none transition">
+        <textarea name="message" rows="5" placeholder="Your Comment" required
+          class="w-full rounded-xl bg-zinc-900 border border-purple-800/40 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-400 outline-none transition"></textarea>
+        <button type="submit"
+          class="w-full bg-gradient-to-r from-purple-700 via-pink-500 to-yellow-400 text-black font-semibold py-3 rounded-full shadow-lg hover:scale-105 transition-all">
+          Submit Comment
+        </button>
+      </form>
+    </section>
+
+  <!-- Suggested Articles -->
+   <section class="mt-12" id="suggested-section">
+    <h2 class="text-2xl font-bold text-purple-400 mb-6">More Poems</h2>
+    <div id="suggested-poems" class="grid md:grid-cols-3 gap-6"></div>
+    <div class="mt-6 text-center">
+      <button id="load-more-suggestions" class="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+        Load More
+      </button>
+    </div>
+  </section>
+    
+  </main>
+  <div class=" bottom-4 left-0 w-full flex flex-col items-center text-xs z-50">
+    <div class="flex gap-6 items-center mb-2">
+      
+      <a href="https://www.youtube.com/@raven-hunt" target="_blank" rel="noopener" aria-label="Youtube" class="hover:opacity-80">
+          <img src="/icons/YouTube_full-color_icon_(2017).png" alt="Youtube" class="h-6 w-6 object-contain" />
+      </a>
+      <a href="https://open.spotify.com/artist/4KsTubibdCXv3IQ8off6iA" target="_blank" rel="noopener" aria-label="Spotify" class="hover:opacity-80">
+          <img src="/icons/Spotify_logo_without_text.png" alt="Spotify" class="h-6 w-6 object-contain" />
+      </a>
+      <a href="https://www.instagram.com/raven.hunt.official" target="_blank" rel="noopener" aria-label="Instagram" class="hover:opacity-80">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="h-6 w-6 object-contain" />
+      </a>
+      <a href="https://www.tiktok.com/@raven_hunt_official" target="_blank" rel="noopener" aria-label="TikTok" class="hover:opacity-80">
+          <img src="/icons/Tiktok_icon.png" alt="TikTok" class="h-6 w-6 object-contain" />
+      </a>
+      <a href="https://music.apple.com/us/artist/raven-hunt/1641396078" target="_blank" rel="noopener" aria-label="Apple Music" class="hover:opacity-80">
+          <img src="/icons/AppleMusicIcon_macOS_2x-removebg-preview.png" alt="Apple Music" class="h-6 w-6 object-contain" />
+      </a>
+      <a href="https://www.boomplay.com/artists/113103124?from=search&srModel=COPYLINK&srList=WEB" target="_blank" rel="noopener" aria-label="Boomplay" class="hover:opacity-80">
+          <img src="/icons/boomplay.png" alt="Boomplay" class="h-6 w-6 object-contain" />
+      </a>
+      <a href="https://blog.ravenhunt.xyz/rss.xml" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg" 
+            alt="RSS Feed" width="20" height="20" 
+            style="vertical-align: middle; margin-right: 5px;">
+      </a>
+      </div>
+
+      <div class="space-x-6">
+          <a href="https://www.ravenhunt.xyz" target="_blank" rel="noopener" class="hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent transition">Main Site</a>
+          <a href="https://lyrics.ravenhunt.xyz" target="_blank" rel="noopener" class="hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent transition">My Lyrics</a>
+          <a href="https://www.ravenhunt.xyz/privacy.html" target="_blank" rel="noopener" class="hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent transition">Privacy & Cookie Policy</a>
+      </div>
+
+      <p class="text-white opacity-60">© 2025 Raven Hunt. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    // --- Load YouTube Iframe API ---
+    let tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+  
+    let player;
+    let isPlaying = false;
+    let progressInterval;
+    const currentPoem = "The Fact That I Love You"; // <— Move it here (global)
+    let statusText; // <— Declare globally too
+  
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('yt-player', {
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+  
+    function onPlayerReady() {
+      const playPauseIcon = document.getElementById('playPauseIcon');
+      const toggleBtn = document.getElementById('toggle-btn');
+      const progressBar = document.getElementById('progress-bar');
+      const progressContainer = document.getElementById('progress-container');
+      const volumeSlider = document.getElementById('volume-slider');
+      statusText = document.getElementById('status-text'); // assign it here
+  
+      toggleBtn.addEventListener('click', () => {
+        if (!isPlaying) {
+          player.playVideo();
+        } else {
+          player.pauseVideo();
+        }
+      });
+  
+      volumeSlider.addEventListener('input', (e) => {
+        player.setVolume(e.target.value);
+      });
+  
+      progressContainer.addEventListener('click', (e) => {
+        const rect = progressContainer.getBoundingClientRect();
+        const percent = (e.clientX - rect.left) / rect.width;
+        const newTime = player.getDuration() * percent;
+        player.seekTo(newTime, true);
+      });
+  
+      progressInterval = setInterval(() => {
+        if (player && player.getDuration) {
+          const current = player.getCurrentTime();
+          const total = player.getDuration();
+          const percent = (current / total) * 100;
+          progressBar.style.width = percent + '%';
+        }
+      }, 500);
+    }
+  
+    function onPlayerStateChange(event) {
+      const playPauseIcon = document.getElementById('playPauseIcon');
+      if (event.data === YT.PlayerState.PLAYING) {
+        isPlaying = true;
+        playPauseIcon.src = '/icons/pause.png';
+        statusText.textContent = `Now Playing: ${currentPoem}`;
+      } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+        isPlaying = false;
+        playPauseIcon.src = '/icons/play.png';
+        statusText.textContent = `${currentPoem} Paused`;
+      }
+    }
+  </script>
+
+  <script src="/js/poem.js"></script>
+
+  <script>
+    // Automatically set redirect URL to the current page
+    document.getElementById("next-url").value = window.location.href;
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      document.getElementById('page-progress-bar').style.width = scrollPercent + '%';
+    });
+
+    // Inline comment success message
+    const form = document.getElementById('comment-form');
+    form.addEventListener('submit', (e) => {
+      setTimeout(() => {
+        document.getElementById('comment-success').classList.remove('hidden');
+        form.reset();
+      }, 500);
+    });
+
+    function copyLink() {
+        navigator.clipboard.writeText(window.location.href);
+
+        // Show toast
+        const toast = document.getElementById('toast');
+        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        toast.classList.add('opacity-100', 'translate-y-0');
+
+        // Hide after 2.5s
+        setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+        }, 2500);
+    }
+
+    loadSuggestedArticles("the-fact-that-i-love-you")
+  </script>
+  
+</body>
+</html>
