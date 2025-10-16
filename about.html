@@ -106,15 +106,50 @@
         <a href="https://forms.gle/FUuyKz4CNnE56vZq6" target="_blank" rel="noopener" aria-label="Google-Forms" class="social-icon">
             <img src="/images/raven-logo.png" alt="Community" class="h-6 w-6 object-contain">
         </a>
+        <!-- RSS -->
+        <a href="https://blog.ravenhunt.xyz/rss.xml" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg" 
+               alt="RSS Feed" width="20" height="20" 
+               style="vertical-align: middle; margin-right: 5px;">
+        </a>  
       </div>
     </section>
 
   </main>
+<!-- Cookie Banner -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-purple-900/60 backdrop-blur-md text-white p-4 shadow-lg flex flex-col sm:flex-row items-center justify-between z-50 hidden">
+    <p class="text-sm mb-2 sm:mb-0">
+      This site uses third-party cookies to improve performance and user experience. 
+      By using any Raven Hunt Website, you agree to their use. See our 
+      <a href="https://www.ravenhunt.xyz/privacy.html" target="_blank" rel="noopener" class="text-yellow-400 hover:text-white underline">Privacy & Cookie Policy</a>.
+    </p>
+    <button id="cookie-accept" class="bg-yellow-400 text-purple-900 font-semibold px-4 py-2 rounded-lg hover:bg-yellow-500 transition">
+      Got it
+    </button>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-gradient-to-r from-purple-900 via-pink-900 to-yellow-400 py-8 text-center text-gray-500">
     <p>&copy; 2025 Raven Hunt. All rights reserved.</p>
   </footer>
+
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const banner = document.getElementById("cookie-banner");
+      const accepted = localStorage.getItem("cookieConsent");
+
+      if (!accepted) {
+        banner.classList.remove("hidden");
+      }
+
+      document.getElementById("cookie-accept").addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "true");
+        banner.classList.add("hidden");
+      });
+    });
+  </script>
 
 </body>
 </html>

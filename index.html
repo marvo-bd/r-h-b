@@ -100,22 +100,27 @@
       <img src="/images/raven-logo.png" alt="Raven Hunt Logo" class="h-10 w-auto">
       <span class="text-xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">Raven Hunt Blog</span>
     </a>
-    <nav class="hidden md:flex gap-6">
+    <!-- Hamburger -->
+    <button id="menu-btn" class="text-white text-3xl focus:outline-none md:hidden">
+      ☰
+    </button>
+  
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-8 text-white">
+      <a href="/" class="hover:text-yellow-400">Home</a>
+      <a href="/spoken-word/" class="hover:text-yellow-400">Spoken Word</a>
       <a href="/about.html" class="hover:text-yellow-400">About</a>
       <a href="/contact.html" class="hover:text-yellow-400">Join the Hunt</a>
     </nav>
-    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5">
-      <span class="block w-6 h-0.5 bg-white"></span>
-      <span class="block w-6 h-0.5 bg-white"></span>
-      <span class="block w-6 h-0.5 bg-white"></span>
-    </button>
   </header>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex-col absolute top-16 left-0 w-full bg-black/80 backdrop-blur-md p-4 gap-4 md:hidden">
-    <a href="/" class="hover:text-yellow-400">Home</a>
-    <a href="/about.html" class="hover:text-yellow-400">About</a>
-    <a href="/contact.html" class="hover:text-yellow-400">Join the Hunt</a>
+  <div id="menu" 
+    class="hidden absolute top-16 right-6 bg-black/70 rounded-xl shadow-lg p-4 flex flex-col space-y-4 text-white z-40 backdrop-blur-sm">
+      <a href="/" class="hover:text-yellow-400">Home</a>
+      <a href="/spoken-word/" class="hover:text-yellow-400">Spoken Word</a>
+      <a href="/about.html" class="hover:text-yellow-400">About</a>
+      <a href="/contact.html" class="hover:text-yellow-400">Join the Hunt</a>
   </div>
 
   <!-- Hero Section -->
@@ -222,9 +227,32 @@
 
 <!-- Scripts -->
 <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  const btn = document.getElementById('menu-btn');
+          const menu = document.getElementById('menu');
+          let timer;
+      
+          btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            resetTimer();
+          });
+      
+          // Close menu when clicking outside
+          document.addEventListener('click', (e) => {
+            if (!btn.contains(e.target) && !menu.contains(e.target)) {
+              menu.classList.add('hidden');
+            }
+          });
+      
+          // Auto close after inactivity
+          function resetTimer() {
+            clearTimeout(timer);
+            timer = setTimeout(() => menu.classList.add('hidden'), 5000);
+          }
+      
+          // Close menu on link click
+          menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+          });
 
   document.addEventListener("DOMContentLoaded", function () {
       const banner = document.getElementById("cookie-banner");
